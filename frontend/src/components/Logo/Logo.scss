@@ -1,4 +1,5 @@
 @import "sass-rem";
+@import "../common/variables";
 
 .logo {
   display: flex;
@@ -19,7 +20,7 @@
       font-weight: bold;
     }
     .company-name__text_small {
-      font-size: rem(12px);
+      font-size: $text-size-small;
     }
   }
 }

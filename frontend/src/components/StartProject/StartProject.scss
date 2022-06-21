@@ -1,8 +1,46 @@
+@import "sass-rem";
+@import "../common/variables";
+
+
 .start-project {
+  font-family: 'Nunito', sans-serif;
+  font-size: $text-size-base;
+  letter-spacing: $letter-spacing-base;
+
    .title {
-
+     text-align: center;
+     font-size: $text-size-title;
+     font-weight: 800;
+     line-height: initial;
+     margin-bottom: rem(20px);
    }
-  .text {
 
+  .text {
+    text-align: center;
+    color: $text-color-secondary;
+    opacity: .6;
+    line-height: rem(24px);
+    margin-bottom: rem(20px);
+  }
+
+  .button-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  .round-red {
+    width: auto;
+    position: absolute;
+    right: 0;
+    top: rem(115px);
+    height: auto;
+  }
+
+  .round-blue {
+    width: auto;
+    position: absolute;
+    left: 0;
+    top: rem(338px);
+    height: auto;
   }
 }

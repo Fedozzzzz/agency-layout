@@ -1,5 +1,6 @@
-//$body-color: red;
-//
-//body {
-//  color: $body-color;
-//}
+@import "./components/common/variables";
+
+
+body {
+  color: $text-color-primary;
+}

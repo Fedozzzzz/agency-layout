@@ -1,5 +1,8 @@
 import React from 'react';
+import Button from '../common/buttons/Button/Button';
 import './StartProject.scss';
+import RoundBlue from '../common/svg/images/RoundBlue';
+import RoundRed from '../common/svg/images/RoundRed';
 
 function StartProject() {
     return (
@@ -16,6 +19,10 @@ function StartProject() {
                 <br />
                 it, you just sit and feel that goal.
             </div>
+            <Button className="button-wrapper" text="Start Project" />
+            {/* TODO: add paralax */}
+            <RoundRed className="round-red" />
+            <RoundBlue className="round-blue" />
         </div>
     );
 }
