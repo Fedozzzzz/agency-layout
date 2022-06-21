@@ -1,0 +1,69 @@
+version: '3'
+
+services:
+#  mysql:
+#    image: mysql:5.7
+#    restart: always
+#    environment:
+#      MYSQL_DATABASE: 'db'
+#      MYSQL_USER: 'fedor'
+#      MYSQL_PASSWORD: '1234'
+#      MYSQL_ROOT_PASSWORD: "1234"
+#    ports:
+#      - "3306:3306"
+#    volumes:
+#      - /data/db:/data/db
+
+#  migration:
+#    build:
+#      context: ../migration
+#    command:
+#      [
+#        "./wait-for-it/wait-for-it.sh",
+#        "mysql:3306",
+#        "--",
+#        "npm",
+#        "run",
+#        "db-migrate",
+#        "up"
+#      ]
+#    links:
+#      - mysql
+#    depends_on:
+#      - mysql
+
+#  backend:
+#    build:
+#      context: ../backend
+#      dockerfile: Dockerfile
+#    restart: always
+#    ports:
+#      - "5000:5000"
+#    volumes:
+#      - ../backend:/app
+#    depends_on:
+#      - summarizer
+#      - mysql
+
+#  summarizer:
+#    build:
+#      context: ../summarizer
+#      dockerfile: Dockerfile
+#    restart: always
+#    ports:
+#      - "8000:8000"
+#    volumes:
+#      - ../summarizer:/app
+
+  frontend:
+    build:
+      context: ../frontend
+      dockerfile: Dockerfile
+    restart: always
+#    depends_on:
+#      - backend
+    ports:
+      - "3000:3000"
+    volumes:
+      - ../frontend/src:/app/src
+

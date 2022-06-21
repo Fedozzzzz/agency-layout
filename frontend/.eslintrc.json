@@ -5,6 +5,7 @@
   },
   "parser": "@babel/eslint-parser",
   "extends": [
+    "airbnb",
     "plugin:react/recommended",
     "plugin:react-hooks/recommended"
   ],
@@ -23,6 +24,7 @@
     "react/jsx-uses-react": "error",
     "react/jsx-uses-vars": "error",
     "react-hooks/rules-of-hooks": "error",
-    "react-hooks/exhaustive-deps": "warn"
+    "react-hooks/exhaustive-deps": "warn",
+    "semi": ["error", "always"]
   }
 }
