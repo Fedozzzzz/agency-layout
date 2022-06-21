@@ -1,0 +1,10 @@
+@import "sass-rem";
+
+.header {
+  margin-top: rem(40px);
+  //padding: rem(40px 25px 0 25px);
+  padding: rem(0 25px);
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: rem(69px);
+}

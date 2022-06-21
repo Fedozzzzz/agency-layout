@@ -1,0 +1,25 @@
+@import "sass-rem";
+
+.logo {
+  display: flex;
+
+  .logo-icon {
+    margin-right: .5rem;
+  }
+
+  .company-name {
+    font-family: 'Quicksand', sans-serif;
+    font-size: .875rem;
+
+    .company-name__text {
+      max-height: rem(18px);
+    }
+    .company-name__text_bold {
+      letter-spacing: rem(0.1px);
+      font-weight: bold;
+    }
+    .company-name__text_small {
+      font-size: rem(12px);
+    }
+  }
+}
