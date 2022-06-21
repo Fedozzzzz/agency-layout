@@ -1,8 +1,10 @@
 import React from 'react';
 import Button from '../common/buttons/Button/Button';
-import './StartProject.scss';
 import RoundBlue from '../common/svg/images/RoundBlue';
 import RoundRed from '../common/svg/images/RoundRed';
+import teamImg from '../../images/team.png';
+import './StartProject.scss';
+import CardRate from "../CardRate/CardRate";
 
 function StartProject() {
     return (
@@ -23,6 +25,10 @@ function StartProject() {
             {/* TODO: add paralax */}
             <RoundRed className="round-red" />
             <RoundBlue className="round-blue" />
+            <div className='team-img-wrapper'>
+                <img src={teamImg} alt="team" />
+                <CardRate className="team-img-wrapper__card-rate"/>
+            </div>
         </div>
     );
 }

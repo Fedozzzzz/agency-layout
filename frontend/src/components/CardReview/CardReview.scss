@@ -1,0 +1,35 @@
+@import "sass-rem";
+@import "../common/variables";
+
+.rate-card {
+  display: flex;
+  flex-direction: column;
+  padding: rem(8px 19px 9px 13px);
+  background-color: #FFFFFF;
+  border-radius: rem(6px);
+  filter: drop-shadow(0 8px 24px rgba(0, 0, 0, 0.15));
+
+  .rate-card__title {
+    font-family: 'Quicksand', sans-serif;
+    font-size: rem(6px);
+    letter-spacing: $letter-spacing-base;
+    margin-bottom: rem(4px);
+    display: flex;
+    align-items: flex-end;
+
+    span {
+      opacity: .5;
+      text-transform: uppercase;
+    }
+    .icon {
+     margin-right: rem(4.5px);
+    }
+  }
+  .rate-card__text {
+    font-size: $text-size-small;
+
+    .rate-card__text_bold {
+      font-weight: bold;
+    }
+  }
+}

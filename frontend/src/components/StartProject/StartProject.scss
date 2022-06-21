@@ -26,6 +26,7 @@
   .button-wrapper {
     display: flex;
     justify-content: center;
+    margin-bottom: rem(62px);
   }
 
   .round-red {
@@ -42,5 +43,16 @@
     left: 0;
     top: rem(338px);
     height: auto;
+  }
+
+  .team-img-wrapper {
+    display: flex;
+    justify-content: center;
+
+    .team-img-wrapper__card-rate {
+      position: absolute;
+      left: rem(21px);
+      top: rem(416px);
+    }
   }
 }

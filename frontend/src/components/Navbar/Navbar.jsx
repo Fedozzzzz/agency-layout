@@ -1,5 +1,6 @@
 import React from 'react';
-import NavbarIcon from '../common/svg/Icons/NavbarIcon/NavbarIcon';
+
+import NavbarIcon from '../common/svg/Icons/NavbarIcon';
 import './Navbar.scss';
 
 function Navbar() {

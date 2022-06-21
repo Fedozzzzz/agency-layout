@@ -1,5 +1,6 @@
 import React from 'react';
-import LogoIcon from '../common/svg/Icons/LogoIcon/LogoIcon';
+
+import LogoIcon from '../common/svg/Icons/LogoIcon';
 import './Logo.scss';
 
 function Logo() {

@@ -1,7 +1,8 @@
 const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const ESLintPlugin = require('eslint-webpack-plugin');
+
 const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin');
+const ESLintPlugin = require('eslint-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const plugins = [
     new HtmlWebpackPlugin({
@@ -16,7 +17,9 @@ if (process.env.NODE_ENV === 'development') {
 }
 
 module.exports = {
-    entry: path.join(__dirname, 'src', 'index.js'),
+    entry: [path.join(__dirname, 'src', 'index.js'),
+        'webpack-dev-server/client?http://127.0.0.0:3000/',
+    ],
     output: {
         path: path.resolve(__dirname, 'dist'),
     },
@@ -24,8 +27,11 @@ module.exports = {
         // contentBase: path.join(__dirname, "dist"),
         // compress: true,
         port: 3000,
+        allowedHosts: 'all',
         // host: "0.0.0.0",
         // watchContentBase: true,
+        // https: false,
+        // disableHostCheck: true,
         hot: true,
     },
     module: {
